@@ -1,0 +1,87 @@
+body {
+	background-color: #262626;
+}
+
+#about {
+	display: none;
+}
+
+header {
+	margin-bottom: 80px;
+}
+
+#exit {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+.aboutContainer {
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%
+}
+
+#avatar {
+	width: 170px;
+	border-style: solid;
+	border-color: #BED825;
+	border-width: 4px;
+	border-radius: 50%;
+	margin-bottom: 40px;
+}
+
+.quote {
+	color: #BED825;
+	font-size: 60px;
+}
+
+.regText {
+	color: #BED825;
+	font-size: 24px;	
+}
+
+/*--------------------------------------------
+If the screen size is 789px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 789px) {
+	.quote {
+		font-size: 40px;
+	}
+
+	.regText {
+		font-size: 20px;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+}
+
+/*---------------------------------------------
+If the screen size is 440px wide or less, 
+set the element classes to the following CSS 
+----------------------------------------------*/
+
+@media screen and (max-width: 440px) {
+	#avatar {
+		margin-left: 23%;
+	}
+	
+	.quote {
+		margin-left: 15%;
+		font-size: 30px;
+	}
+
+	.regText {
+		font-size: 18px;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+}

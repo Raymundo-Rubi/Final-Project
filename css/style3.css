@@ -1,0 +1,97 @@
+body {
+	background-color: #EFEFEF;
+}
+
+header {
+	margin-bottom: 100px;
+}
+
+#exit {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	right: 5%;
+	top: 5%;
+}
+
+.projectWindow {
+	background-color: #FFFFFF;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	padding: 8%;
+	box-shadow: 4px 4px 5px #d3d3d3;
+}
+
+.projectWindow2 {
+	background-color: #6b6b6b;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	padding: 8%;
+	box-shadow: 4px 4px 5px #d3d3d3;
+}
+
+.projectWindow2 .regText {
+	color: white;
+}
+
+.projectName {
+	color: #262626;
+	font-size: 50px;
+	margin-bottom: 7%;
+}
+
+.regText {
+	color: #262626;
+	font-size: 20px;
+	margin-bottom: 4%	
+}
+
+.galleryImg {
+	width: 100%;
+}
+
+/*--------------------------------------------
+If the screen size is 789px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 789px) {
+	.projectName {
+		font-size: 40px;
+	}
+
+	.regText {
+		font-size: 20px;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+}
+
+/*---------------------------------------------
+If the screen size is 440px wide or less, 
+set the element classes to the following CSS 
+----------------------------------------------*/
+
+@media screen and (max-width: 440px) {	
+	.projectName {
+		font-size: 30px;
+	}
+
+	.regText {
+		font-size: 18px;
+	}
+
+	span {
+		display: none;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+}

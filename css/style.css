@@ -1,0 +1,411 @@
+.bigContainer {
+	background-color: #EFEFEF;
+}
+
+header {
+	background-color: #262626;
+}
+
+#headerContent {
+	position: fixed;
+	z-index: 2;
+}
+
+#logo {
+	height: 80px;
+	width: 80px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+/*------------------------------------
+Full Screen Nav 
+--------------------------------------*/
+
+aside {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #262626;
+	transition: all .5s ease;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.close {
+	height: 50px;
+	width: 50px;
+  	position: fixed;
+  	top: 40px;
+  	left: 50px;
+  	z-index: 1;
+  	cursor: pointer;
+}
+.close:hover {
+	opacity: 1;
+}
+
+nav {
+	text-align: center;
+	height: 95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	margin-top: 20px;
+	font-size: 40px;
+	transition: all 0.5s ease;
+	display: block;
+	text-decoration: none;
+	color: #BED825;
+}
+
+nav ul li a:hover {
+  color: #EFEFEF;
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 600px) {
+  nav ul li a {
+    font-size: 60px;
+  }
+}
+
+.outerClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}
+
+
+/*------------------------------------
+End Full Screen Nav
+--------------------------------------*/
+
+#main {
+	background-color: #262626;
+	height: 710px;
+	margin-bottom: 150px;
+}
+
+#quoteContainer {
+	margin: 0 auto;
+	width: 70%;
+	display: none;
+}
+
+.quote {
+	color: #BED825;
+	font-size: 60px;
+}
+
+#hi {
+	padding-top: 170px;
+}
+
+#welcome {
+	font-family: 'Pacifico', cursive;
+	margin-top: 150px;
+	position: absolute;
+	right: 18%;
+	display: none;
+}
+
+#dnaSpecialty {
+	position: absolute;
+	bottom: 0%;
+}
+
+
+/*---------------------------------------------
+If the screen size is 789px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 789px) {
+	#main {
+		height: 500px;
+		margin-bottom: 70px;
+	}
+	#hi {
+		padding-top: 140px;
+	}
+	#welcome {
+		margin-top: 70px;
+		margin-left: 65%;
+	}
+	.quote {
+		font-size: 40px;
+	}
+}
+
+/*-------------------------------------------
+ If the screen size is 440px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 440px) {
+	#logo {
+		height: 60px;
+		width: 60px;
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+
+	#main {
+		height: 390px;
+		margin-bottom: 37.5px;
+	}
+	#hi {
+		padding-top: 110px;
+	}
+	#welcome {
+		margin-top: 35px;
+		margin-left: 55%;
+	}
+	.quote {
+		font-size: 30px;
+	}
+}
+
+/* Project Gallery and sub elements */
+
+.projectWindow {
+	background-color: #FFFFFF;
+	height: 650px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 150px;
+	box-shadow: 4px 4px 5px #d3d3d3;
+}
+
+.projectNumberBlock {
+	background-color: #262626;
+	width: 110px;
+	height: 110px;
+}
+
+.projectNumber {
+	color: #BED825;
+	font-size: 70px;
+	margin-left: 5px;
+}
+
+.projectName {
+	font-size: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.wrapper {
+	height: 540px;
+	width: 97%;
+	display: inline-block;
+	overflow: hidden !important;
+}
+
+.projectImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .3s ease-in-out;
+}
+
+.wrapper:hover img {
+	transform: scale(1.055);
+}
+
+
+/*------------------------------------------
+If the screen size is 769px wide or less, 
+set the element classes to the following CSS 
+--------------------------------------------*/
+
+@media screen and (max-width: 789px) {
+	.projectWindow {
+		height: 450px;
+		margin-bottom: 70px;
+	}
+
+	.projectNumberBlock {
+		width: 90px;
+		height: 90px;
+	}
+
+	.projectNumber {
+		font-size: 60px;
+	}
+
+	.projectName {
+		font-size: 40px;
+		margin-top: 18px;
+		margin-left: 30px;
+	}
+
+	.wrapper {
+		height: 360px;
+		max-width: 95%;
+	}
+}
+
+/*-------------------------------------------
+If the screen size is 440px wide or less, 
+set the element classes to the following CSS
+--------------------------------------------*/
+
+@media screen and (max-width: 440px) {
+	.projectWindow {
+		height: 250px;
+		margin-bottom: 37.5px;
+	}
+
+	.projectNumberBlock {
+		width: 65px;
+		height: 65px;
+	}
+
+	.projectNumber {
+		font-size: 45px;
+	}
+
+	.projectName {
+		font-size: 30px;
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+	.wrapper {
+		height: 185px;
+		max-width: 91.5%;
+	}
+}
+
+/* End project gallery */
+
+#blackBox {
+	background-color: #262626;
+
+}
+
+#bottomText {
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 100px;
+}
+
+#hire {
+	font-family: 'Pacifico', cursive;
+}
+
+.regText {
+	color: #BED825;
+	font-size: 24px;	
+}
+
+.fab:hover {
+	color: #EFEFEF;
+}
+
+#contactForm {
+	margin-top: 40px;
+	padding-left: 20%
+}
+
+label {
+	color: #BED825;
+	font-weight: normal;
+	display: block;
+	margin-top: 10px;
+}
+
+.roundInputBox {
+	width: 90%;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+input[type="submit"] {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 105px;
+	background-color: #BED825;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input:focus, textarea:focus {
+   outline: none !important; 
+}
+
+textarea, input {
+	width: 97%;
+	border-style: none;
+}
+
+footer {
+	background-color: #262626;
+	padding: 50px;
+}
+
+footer p {
+	color: #BED825;
+	font-size: 15px;
+}
+
+/*--------------------------------------------
+If the screen size is 789px wide or less, 
+set the element classes to the following CSS 
+---------------------------------------------*/
+
+@media screen and (max-width: 789px) {
+	.regText {
+		font-size: 20px;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+
+	#contactForm {
+		padding-left: 10%;
+	}
+}
+
+/*---------------------------------------------
+If the screen size is 440px wide or less, 
+set the element classes to the following CSS 
+----------------------------------------------*/
+
+@media screen and (max-width: 440px) {
+	.regText {
+		font-size: 18px;
+	}
+
+	#bottomText {
+		padding-top: 60px;
+	}
+
+	footer {
+		padding: 30px;
+	}
+}
